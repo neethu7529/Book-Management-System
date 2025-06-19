@@ -1,0 +1,77 @@
+ FEATURES
+   User Registration
+   User Login with JWT Authentication
+   MongoDB for persistent storage
+   React frontend (Bootstrap for styling)
+   Flask REST API backend
+   Password hashing using Werkzeug
+   CORS enabled for frontend-backend communication
+
+Required fields
+   
+Frontend: React, Axios, Bootstrap
+
+Backend: Flask, Flask-JWT-Extended, Flask-CORS
+
+Database: MongoDB
+
+Auth: JWT Token-based Authentication
+
+Password: Werkzeug password hashing
+
+  Backend Setup (Flask + MongoDB)
+Create a virtual environment
+
+# Python 3.9+
+python -m venv venv
+# Activate the environment
+
+venv\Scripts\activate
+
+pip install -r requirements.txt
+
+flask
+flask-cors
+flask-jwt-extended
+pymongo
+dnspython
+werkzeug
+
+
+  Frontend (React)
+
+The frontend of this project is built using React (with functional components and React Hooks).  
+It provides a user-friendly interface for interacting with the backend API.
+
+Key features:
+
+- User registration form with input validation
+- User login form with JWT token handling
+- Axios for HTTP requests
+- JWT token stored in browser localStorage for authentication
+- Responsive UI using Bootstrap
+- Navigation between Login and Register pages
+- Redirect to `/home` after successful login
+
+BACKEND
+  
+The backend is built with Flask, using a RESTful API architecture.
+It provides user authentication and securely stores user data in MongoDB.
+
+Key Features:
+
+REST API built with Flask
+
+User registration (/register endpoint)
+
+User login (/login endpoint) with JWT token generation
+
+Passwords hashed before storing in MongoDB
+
+JWT (JSON Web Token) used for secure authentication
+
+Protected endpoints using Flask-JWT-Extended
+
+CORS support to allow requests from the React frontend
+
+MongoDB used to persist user data (username, email, phone, gender, hashed password)
